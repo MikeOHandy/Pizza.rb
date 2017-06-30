@@ -19,15 +19,18 @@ def veggies
 	veggies=["mushrooms","pineapple","spinnach","peppers","olives","none"].sample
 end
 
-def pizza(pizza)
+def pizza
 	puts crust,sauce,cheese,meat,veggies
 	
 end
 p "how many pizzas?"
+i = gets.chomp.to_i 
+count=1
+i.times do
+	p"pizza#{count}"
+	count+=1
+	pizza()
 
-pizza_number = gets.chomp.to_i .times do
-pizza(pizza_number)
-
-puts
-
+	puts
+	
 end
